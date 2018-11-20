@@ -4,15 +4,53 @@
 <meta charset="UTF-8">
 <title>YouTube Randomizer</title>
 
-<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
-<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
-<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+<script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 </head>
 
 <body>
-Content
+<div class="container-fluid">
+    <h3 class="text-center mt-4">YouTube Randomizer</h3>
+    <h6>Select up to three options</h6>
+    <div class="row align-items-center">
+        <div class="col">
+            <select class="custom-select" id="inputSelect0">
+                <option selected>Choose...</option>
+                <option value="0">Noun</option>
+                <option value="1">Verb</option>
+                <option value="2">Person/Place</option>
+            </select>
+        </div>
+        <div class="col col-auto">
+            <h1>+</h1>
+        </div>
+        <div class="col">
+            <select class="custom-select" id="inputSelect0">
+                <option selected>Choose...</option>
+                <option value="0">Noun</option>
+                <option value="1">Verb</option>
+                <option value="2">Person/Place</option>
+            </select>
+        </div>
+        <div class="col col-auto">
+                <h1>+</h1>
+        </div>
+        <div class="col">
+            <select class="custom-select" id="inputSelect0">
+                <option selected>Choose...</option>
+                <option value="0">Noun</option>
+                <option value="1">Verb</option>
+                <option value="2">Person/Place</option>
+            </select>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <button type="button" class="btn btn-info">Find Me A Random Video!</button>
+    </div>
+</div>
 </body>
 
 </html>
