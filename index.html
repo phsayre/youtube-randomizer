@@ -14,10 +14,18 @@
 <body>
 <div class="container-fluid">
     <h3 class="text-center mt-4">YouTube Randomizer</h3>
-    <h6>Select up to three options</h6>
-    <div class="row align-items-center">
+    <div clas="row">
         <div class="col">
-            <select class="custom-select" id="inputSelect0">
+            &nbsp;
+        </div>
+    </div>
+    <h6 class="text-center mt-4">Select up to three word categories</h6>
+    <div class="row align-items-center">
+        <div class="col d-none d-lg-block">
+            &nbsp;
+        </div>
+        <div class="col">
+            <select class="custom-select" id="inputWord0">
                 <option selected>Choose...</option>
                 <option value="0">Noun</option>
                 <option value="1">Verb</option>
@@ -28,7 +36,7 @@
             <h1>+</h1>
         </div>
         <div class="col">
-            <select class="custom-select" id="inputSelect0">
+            <select class="custom-select" id="inputWord1">
                 <option selected>Choose...</option>
                 <option value="0">Noun</option>
                 <option value="1">Verb</option>
@@ -39,15 +47,32 @@
                 <h1>+</h1>
         </div>
         <div class="col">
-            <select class="custom-select" id="inputSelect0">
+            <select class="custom-select" id="inputWord2">
                 <option selected>Choose...</option>
                 <option value="0">Noun</option>
                 <option value="1">Verb</option>
                 <option value="2">Person/Place</option>
             </select>
         </div>
+        <div class="col d-none d-lg-block">
+                &nbsp;
+        </div>
     </div>
-    <div class="row justify-content-center mt-4">
+    <h6 class="text-center mt-4">Video duration</h6>
+    <div class="row justify-content-center align-items-center mb-4">
+        <div class="col col-auto">
+            <select class="custom-select" id="inputDuration">
+                <option selected value="short">Short</option>
+                <option value="long">Long</option>
+            </select>
+        </div>
+    </div>
+    <div clas="row">
+        <div class="col">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center mt-4">
         <button type="button" class="btn btn-info">Find Me A Random Video!</button>
     </div>
 </div>
